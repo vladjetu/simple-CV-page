@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-body-background: rgb(225, 225, 225);
+  --color-section-box-shadow: rgba(0, 0, 0, 0.3);
+  --color-section-background: rgb(245, 245, 245);
+  --color-section-border: cyan;
+  --color-h1-h2: cyan;
+}
+
+body {
+  font-family: Roboto, "sans-serif";
+  line-height: 1.6;
+  background-color: var(--color-body-background);
+  width: 90%;
+  margin: 0 auto;
+}
+
+section {
+  margin: 20px auto;
+  padding: 20px;
+  box-shadow: 0px 4px 8px var(--color-section-box-shadow);
+  background-color: var(--color-section-background);
+  border-radius: 10px;
+  border: 1px solid var(--color-section-border);
+}
+
+h1,
+h2 {
+  color: var(--color-h1-h2);
+  font-weight: 700;
+  text-shadow: 1px 1px 1px black;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 10px;
+}
+
+.contact-name {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.contact-list {
+  text-align: center;
+}
+
+.contact-list li {
+  display: inline-block;
+  margin: 10px;
+}
+
+.contact-list a {
+  color: black;
+}
+
+.contact-list a:hover {
+  color: var(--color-h1-h2);
+}
+
+.my-cv-photo {
+  width: 10%;
+  display: block;
+  margin: 10px auto;
+  border-radius: 50%;
+}
+
+.professional-summary {
+  text-align: justify;
+}
+
+.professional-summary span {
+  font-weight: bold;
+}
+
+.sumup,
+.job,
+.education-degree,
+.language-table {
+  margin: 10px;
+}
+
+.job p {
+  font-style: italic;
+}
+
+.education-degree p {
+  font-style: italic;
+}
+
+.language-table {
+  margin: 10px auto;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.language-table th,
+.language-table td {
+  border: 1px solid var(--color-section-border);
+  padding: 10px;
+}
+
+.language-table thead {
+  background-color: var(--color-h1-h2);
+}
+
+.language-table tbody {
+  background-color: var(--color-body-background);
+}
+
+.language-table td {
+  text-align: center;
+}
